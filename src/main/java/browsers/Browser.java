@@ -3,7 +3,6 @@ package browsers;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.Assert;
 
 import java.time.Duration;
 
@@ -28,9 +27,9 @@ public class Browser {
 
 
         }
-        System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\drivers\\chromedriver.exe");
-        driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(IMPLICIT_WAIT)); // не забывай альт энтер!!!
+       // System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\drivers\\chromedriver.exe");
+       // driver = new ChromeDriver();
+       // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(IMPLICIT_WAIT)); // не забывай альт энтер!!!
         driver.manage().window().maximize();
         return driver;
     }
